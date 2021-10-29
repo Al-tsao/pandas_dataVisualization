@@ -7,8 +7,12 @@ from numpy.random import randn, randint, uniform, sample
 #資料匯入
 iris = sns.load_dataset('iris')
 
-df = iris.drop('species', axis = 1)
+df = iris.drop(['species'], axis = 1)
 
-df.plot(kind='box', figsize=(10,5), vert = False) #vert: 選擇水平或者垂直呈現
-
+#單純bar plot
+df.plot(kind = 'bar')
 plt.show()
+
+
+
+
