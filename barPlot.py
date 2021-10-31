@@ -7,7 +7,6 @@ from numpy.random import randn, randint, uniform, sample
 
 #資料匯入
 iris = sns.load_dataset('iris')
-
 df = iris.drop(['species'], axis = 1)
 
 #單純bar plot
